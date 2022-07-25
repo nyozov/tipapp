@@ -1,3 +1,114 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  font-family: "Space Mono", "sans-serif";
   background: hsl(185, 41%, 84%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.logo {
+  position: absolute;
+  padding: 15px;
+  top: 10%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+  width: 70%;
+  height: 350px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3);
+}
+
+.right-side {
+  border: solid black;
+  width: 100%;
+  border-radius: 5%;
+  padding: 5px;
+  background: hsl(183, 100%, 15%);
+  color: white;
+}
+
+.left-side {
+  width: 100%;
+  border-radius: 5%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.amount-input {
+  background: hsl(189, 41%, 97%);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-input input {
+  background: hsl(189, 41%, 97%);
+  border: none;
+  color: hsl(183, 100%, 15%);
+  width:100%;
+  text-align: right;
+}
+
+.text-gray {
+  color: hsl(186, 14%, 43%);
+}
+
+
+.tip-grid {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.tip-button {
+  width:100%;
+  height:100%;
+  padding:5px;
+  margin:5px;
+  border:none;
+
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: hsl(183, 100%, 15%);
+  color:white;
+  font-size:24px;
+  border-radius:10px;
+}
+
+.custom-button {
+  cursor: pointer;
+  width:100%;
+  height:100%;
+  padding:5px;
+  margin:5px;
+  border:none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:white;
+  font-size:24px;
+  border-radius:10px;
+
 }
