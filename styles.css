@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 
 body {
-  font-family: "Space Mono", "sans-serif";
+  font-family: "Space Mono";
   background: hsl(185, 41%, 84%);
   margin: 0;
   padding: 0;
@@ -37,7 +37,6 @@ input:focus {
 }
 
 .right-side {
-  border: solid black;
   width: 100%;
   border-radius: 5%;
   padding: 5px;
@@ -67,7 +66,7 @@ input:focus {
   background: hsl(189, 41%, 97%);
   border: none;
   color: hsl(183, 100%, 15%);
-  width:100%;
+  width: 100%;
   text-align: right;
 }
 
@@ -75,40 +74,47 @@ input:focus {
   color: hsl(186, 14%, 43%);
 }
 
-
 .tip-grid {
   display: flex;
   justify-content: center;
- 
 }
 
 .tip-button {
-  width:100%;
-  height:100%;
-  padding:5px;
-  margin:5px;
-  border:none;
-
+  font-family: "Space Mono";
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  border: none;
   cursor: pointer;
   padding-left: 10px;
   padding-right: 10px;
   background-color: hsl(183, 100%, 15%);
-  color:white;
-  font-size:24px;
-  border-radius:10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
 .custom-button {
+  font-family: "Space Mono";
   cursor: pointer;
-  width:100%;
-  height:100%;
-  padding:5px;
-  margin:5px;
-  border:none;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  margin: 5px;
+  border: none;
   padding-left: 10px;
   padding-right: 10px;
-  color:white;
-  font-size:24px;
-  border-radius:10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
 
+
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width:100%;
+  }
 }
